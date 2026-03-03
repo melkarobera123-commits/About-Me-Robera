@@ -404,7 +404,7 @@ footer {
 
 /* individual post page */
 .post-header {
-  background: #fcfdff;
+  background: #6100bd;
   color: rgb(0, 0, 0);
   padding: 40px 20px;
   text-align: center;
@@ -426,7 +426,7 @@ footer {
   padding: 0 20px;
   line-height: 1.6;
   color: #000000;
-  background: rgb(254, 255, 255);
+  background: rgb(6, 189, 189);
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
