@@ -9,15 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
-<script>
-  // Handle image errors immediately (before body loads)
-  document.addEventListener("error", (e) => {
-    if (e.target.tagName.toLowerCase() === "img") {
-      e.target.src = "https://placehold.co/600x400?text=Image+Unavailable";
-      e.target.alt = "Image unavailable";
-    }
-  }, true);
-</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -33,11 +24,6 @@
   </nav>
   <button id="darkToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">🌙</button>
 </header>
-
-<div class="issue-bar">
-  <span>Issue 04</span>
-  <div>Modern pharmacy, timeless craft</div>
-</div>
 
 <main id="main">
   <section class="hero">
@@ -63,28 +49,28 @@
       <p>Fresh perspectives from the frontiers of pharmacy and care.</p>
     </div>
     <div class="post reveal">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pestle%20and%20mortar.jpg" alt="Mortar and pestle used in traditional medicine" loading="lazy">
+      <img src="images/aspirin-hero.jpg" alt="Mortar and pestle used in traditional medicine" loading="lazy">
       <h3>The Story of Aspirin</h3>
       <p>How willow bark became the world's most famous medicine.</p>
       <a href="post1.html">Read More</a>
     </div>
 
     <div class="post reveal">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Penicillium%20glabrum%20conidiophores.jpg" alt="Penicillium conidiophores under a microscope" loading="lazy">
+      <img src="images/penicillin-hero.jpg" alt="Penicillium conidiophores under a microscope" loading="lazy">
       <h3>Penicillin Discovery</h3>
       <p>The accidental discovery that changed medicine forever.</p>
       <a href="post2.html">Read More</a>
     </div>
 
     <div class="post reveal">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Vaccination.jpg" alt="Healthcare worker administering a vaccine" loading="lazy">
+      <img src="images/vaccine-hero.jpg" alt="Healthcare worker administering a vaccine" loading="lazy">
       <h3>How Vaccines Work</h3>
       <p>Training the immune system to fight disease.</p>
       <a href="post3.html">Read More</a>
     </div>
 
     <div class="post reveal">
-      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Apothecary%20Shop,%20Interior%202.jpg" alt="Historic apothecary shop interior" loading="lazy">
+      <img src="images/myths-hero.jpg" alt="Historic apothecary shop interior" loading="lazy">
       <h3>Pharmacy Myths and Facts</h3>
       <p>Separating evidence from misinformation in everyday care.</p>
       <a href="post4.html">Read More</a>
