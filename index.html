@@ -91,16 +91,24 @@
     </div>
   </section>
 
-  <section class="newsletter">
+  <section class="newsletter" id="newsletter">
     <h2>Join the Apothecaries Circle</h2>
     <p class="newsletter-note">Monthly dispatches on science, history, and the future of medicine.</p>
-    <form class="newsletter-form" action="#" method="post">
+    <form class="newsletter-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="4e21cb9f-ba42-4fda-ae42-3759d0f2baae">
+      <input type="hidden" name="subject" value="New Apothecaries Newsletter Submission">
+      <input type="hidden" name="from_name" value="Apothecaries Blog">
+      <input type="hidden" name="redirect" value="index.html?success=1#newsletter">
+      <input type="checkbox" name="botcheck" style="display:none" aria-hidden="true" tabindex="-1">
       <label class="sr-only" for="newsletter-name">Name</label>
-      <input id="newsletter-name" name="name" type="text" placeholder="Your name" autocomplete="name">
+      <input id="newsletter-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
       <label class="sr-only" for="newsletter-email">Email</label>
       <input id="newsletter-email" name="email" type="email" placeholder="Your email address" autocomplete="email" aria-describedby="newsletter-privacy" required>
-      <button type="submit">Subscribe</button>
+      <label class="sr-only" for="newsletter-message">Message</label>
+      <textarea id="newsletter-message" name="message" placeholder="Your message" rows="3" required></textarea>
+      <button type="submit">Submit Form</button>
     </form>
+    <div class="newsletter-status" role="status" aria-live="polite" hidden></div>
     <p class="newsletter-privacy" id="newsletter-privacy">No spam. Unsubscribe anytime.</p>
   </section>
 
